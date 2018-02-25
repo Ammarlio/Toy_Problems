@@ -17,18 +17,3 @@
 	
 */
 
-<html>
-	<head>
-	<title>
-	favorite
-	</title>
-	</head>
-	<body>
-	<ul>
-	<li>
-	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Batman-BenAffleck.jpg/200px-Batman-BenAffleck.jpg" alt='hello'>
-	</li>
-	</ul>
-	</body>
-
-</html>
