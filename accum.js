@@ -6,12 +6,14 @@
 
     function accum(input){
         var  str=""
-       
-        var f=input[0].toUpperCase()+"-"
-        for (var i = 1; i < input.length; i++) {
-        		//i need to make another for loop but actually i couldnt make it in my logic i will understand it later
-        	str+=input[i].toUpperCase()+input[i]+"-"
+        var f=input[0].toUpperCase()+'-'
+        var z;
+       	for (var i = 1; i < input.length-1; i++) {
+       		z=i
+       			str+=input[i].toUpperCase()+ input[i].repeat(i)+'-'
+       		
+       	}
 
-        }
-        return f+str;
+       	return f+str+input[z+1].toUpperCase()+input[z+1].repeat(z+1);
+
     }
