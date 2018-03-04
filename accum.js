@@ -4,16 +4,15 @@
 // accum("RqaEzty"); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 // accum("cwAt");    // "C-Ww-Aaa-Tttt"
 
-    function accum(input){
-        var  str=""
-        var f=input[0].toUpperCase()+'-'
-        var z;
-       	for (var i = 1; i < input.length-1; i++) {
-       		z=i
-       			str+=input[i].toUpperCase()+ input[i].repeat(i)+'-'
-       		
-       	}
-
-       	return f+str+input[z+1].toUpperCase()+input[z+1].repeat(z+1);
-
+  function accum(string){
+    var str=""
+    var first=string[0].toUpperCase()+"-";
+    for (var i = 0; i < string.length; i++) {
+      str+=string[i].toUpperCase()+string[i].repeat(i)+"-"
     }
+   str=str.split("");
+   str.pop();
+   str=str.join("");
+   return str;
+
+  }
