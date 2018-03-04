@@ -15,11 +15,11 @@ var x = [{name : 'Jon',age : 45}, {name : 'Ali', age : 28},
       }
     }
     
-    function pName(argument) {
+    function pName(array) {
         var arr=[];
-        each(argument,function(argument,i){
+        each(array,function(elem,i){
                 if(i%2===0){
-                    arr.push(x[i].name)
+                    arr.push(elem.name)
                 }
 
         })
@@ -57,10 +57,10 @@ var obJ = {name: 'Salim', age : 15, phone : '079-0000000'}
     
     
     function printValue(obj) {
-        var ob={};      
-        each(obj,function(obj){
-           ob=ob+"\n"+obj
+        var str=""      
+        each(obj,function(obj,key){
+           str+=obj+"\n"
         })
 
-        return ob;
+        return str;
     }
