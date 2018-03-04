@@ -12,7 +12,9 @@
  		return num
  	}else{
 
- 		return Math.ceil(num/10)*10
+ 		num+=10;
+ 		num-=num%10;
+ 		return num;
 
  	}
 
